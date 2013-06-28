@@ -26,12 +26,12 @@ class wordlist:
         wpplugins = 'wp_plugins.txt'
 
 def clear():
-  '''Clear screen'''
-        if os.name == 'posix':
-                cmd = 'clear'
-        else:
-                cmd = 'cls'
-        os.system(cmd)
+      '''Clear screen'''
+      if os.name == 'posix':
+            cmd = 'clear'
+      else:
+            cmd = 'cls'
+      os.system(cmd)
 
 def MSG(msg):
         if msg == 'wprun':
@@ -40,7 +40,7 @@ def MSG(msg):
                 print('-===============================================================-')
         elif msg == 'plugfound':
                 print('[!] Found Plugin page @> ')
-		
+                
 def usage():
         print '''
 :: Usage ::
@@ -53,7 +53,7 @@ If the wordpress installed path is not in root directory, you have to supply the
         '''
 
 def banner():
-	print '''
+        print '''
  __      __          ____                               
 /\ \  __/\ \        /\  _`\                             
 \ \ \/\ \ \ \  _____\ \,\L\_\    ___     __      ___    
@@ -63,7 +63,7 @@ def banner():
       
                 \ \_\                                  
                  \/_/beta v.0.1 (-) Mr.Geek (-) 4Sectors
-	'''
+        '''
 
 class wpscan(object):
         def __init__(self,url,path,wordlist):
@@ -151,17 +151,17 @@ def WpScan(domain,path):
         pass
 
 def main():
-	'''Main function'''
-        if len(sys.argv) == 3 and sys.argv[1] == '-wp' and sys.argv[2].startswith('http://'):
+        '''Main function'''
+        if len(sys.argv) == 3 and sys.argv[1] == '-u' and sys.argv[2].startswith('http://'):
                 WpScan(sys.argv[2],0)
 
-        elif len(sys.argv) == 5 and sys.argv[1] == '-wp' and sys.argv[2].startswith('http://') and sys.argv[3].startswith('-p'):
+        elif len(sys.argv) == 5 and sys.argv[1] == '-u' and sys.argv[2].startswith('http://') and sys.argv[3].startswith('-p'):
                 WpScan(sys.argv[2],sys.argv[4])
         
         else:
                 usage()
 
 if __name__ == "__main__":
-	clear()
-	banner()
-	main()
+        clear()
+        banner()
+        main()
