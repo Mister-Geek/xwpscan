@@ -14,12 +14,12 @@ Functions
 dEm0 ScaN
 -------------
 [*] Starting Wordpress Scanner ...
-[-] Enumerating... (-)> http://www.myanmarmuslim.net
+[-] Enumerating... (-)> http://www.url.com
 -===============================================================-
-[!] Readme file found at www.myanmarmuslim.net/readme.html
+[!] Readme file found at www.url.com/readme.html
 -=================================================-
 [!] Found Plugin page @>
-[-]> www.myanmarmuslim.net/wp-content/plugins/simple-facebook-connect/license.tx
+[-]> www.url.com/wp-content/plugins/simple-facebook-connect/license.tx
 t
 [!] Found Plugin page @>
-[-]> www.myanmarmuslim.net/wp-content/plugins/printfriendly/admin.css
+[-]> www.url.com/wp-content/plugins/printfriendly/admin.css
